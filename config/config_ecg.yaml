@@ -1,0 +1,43 @@
+path:
+  train: '/hpc/home/ephlanx/dbpm_pubcode/data/Diagnostic/data/train.pt'
+  val: '/hpc/home/ephlanx/dbpm_pubcode/data/Diagnostic/data/val.pt'
+  test: '/hpc/home/ephlanx/dbpm_pubcode/data/Diagnostic/data/test.pt'
+
+dataset: 'ECG'
+
+seeds: [0,1,2,3,4]
+
+cnn:
+  dim_input: 12
+  dim_output: 256  
+  kernel_size: 8
+  stride: 1
+  seq_len: 96
+  resnet: True
+
+classifier:
+  prediction_size: 44
+  multi_label: True
+
+correction:
+  cut_np: 2
+  cut_fp: 3
+
+head:
+  head_hidden_dim: 512
+  head_output_dim: 256
+
+trainer:
+  batch_size: 512
+  warm_epochs: 50 #50
+  max_epochs: 80 # 80
+  tune_epochs: 40 # 40
+  num_workers: 20
+
+augmentation:
+  scale_ratio: 1.1
+  jitter_ratio: 0.8
+  max_seg: 8
+
+optimizer:
+  lr: 0.0003
