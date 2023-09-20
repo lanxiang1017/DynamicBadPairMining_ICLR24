@@ -1,6 +1,5 @@
 # DynamicBadPairMining_ICLR24
-
-This repository contains codes for demonstration of integrating DBPM into SimCLR.
+This repository contains codes for demonstration of integrating DBPM into SimCLR. Codes will be made publicly available.
 
 ## Dataset and preprocessing
 1. Here we use the PTB-XL dataset as an example. To acquire the data, kindly follow the guidelines at [https://physionet.org/content/ptb-xl/1.0.1/].
