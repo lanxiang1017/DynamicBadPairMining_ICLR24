@@ -1,7 +1,7 @@
 path:
-  train: '/hpc/home/ephlanx/dbpm_pubcode/data/Diagnostic/data/train.pt'
-  val: '/hpc/home/ephlanx/dbpm_pubcode/data/Diagnostic/data/val.pt'
-  test: '/hpc/home/ephlanx/dbpm_pubcode/data/Diagnostic/data/test.pt'
+  train: ''
+  val: ''
+  test: ''
 
 dataset: 'ECG'
 
@@ -29,9 +29,9 @@ head:
 
 trainer:
   batch_size: 512
-  warm_epochs: 50 #50
-  max_epochs: 80 # 80
-  tune_epochs: 40 # 40
+  warm_epochs: 50 
+  max_epochs: 80 
+  tune_epochs: 40
   num_workers: 20
 
 augmentation:
