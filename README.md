@@ -7,7 +7,7 @@ This repository contains codes for demonstration of integrating DBPM into SimCLR
 3. `python process_ptbxl.py`
 
 ## Run task
-1. Specify the processed data path in config/config_ecg.yaml
+1. Specify the processed data path in config/config_ecg.yaml.
 2. `. run.sh`
 
 ## Main dependencies
